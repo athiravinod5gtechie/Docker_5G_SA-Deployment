@@ -1,0 +1,62 @@
+     +--------------------------------------------------------------------+
+     ¦                • MobaXterm Personal Edition v23.0 •                ¦
+     ¦              (X server, SSH client and network tools)              ¦
+     ¦                                                                    ¦
+     ¦ ? Your computer drives are accessible through the /drives path     ¦
+     ¦ ? Your DISPLAY is set to 192.168.1.4:0.0                           ¦
+     ¦ ? When using SSH, your remote DISPLAY is automatically forwarded   ¦
+     ¦ ? Each command status is specified by a special symbol (? or ?)    ¦
+     ¦                                                                    ¦
+     ¦ • Important:                                                       ¦
+     ¦ This is MobaXterm Personal Edition. The Professional edition       ¦
+     ¦ allows you to customize MobaXterm for your company: you can add    ¦
+     ¦ your own logo, your parameters, your welcome message and generate  ¦
+     ¦ either an MSI installation package or a portable executable.       ¦
+     ¦ We can also modify MobaXterm or develop the plugins you need.      ¦
+     ¦ For more information: https://mobaxterm.mobatek.net/download.html  ¦
+     +--------------------------------------------------------------------+
+ ? 08/01/2024 ? ? 16:39.46 ? ? /home/mobaxterm ? ssh  ubuntu@172.16.5.140
+                                                                                                                                           ?
+
+ ? 08/01/2024 ? ? 16:39.49 ? ? /home/mobaxterm ? ssh  ubuntu@172.16.5.140
+                                                                                                                                           ?
+
+ ? 08/01/2024 ? ? 17:52.18 ? ? /home/mobaxterm ? ssh  ubuntu@172.16.5.140
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-126-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jan  8 12:34:55 UTC 2024
+
+
+                                        _       _                _                 _
+               __      ____ ___   _____| | __ _| |__  ___    ___| | ___  _   _  __| |
+               \ \ /\ / / _` \ \ / / _ \ |/ _` | '_ \/ __|  / __| |/ _ \| | | |/ _` |
+                \ V  V / (_| |\ V /  __/ | (_| | |_) \__ \ | (__| | (_) | |_| | (_| |
+                 \_/\_/ \__,_| \_/ \___|_|\__,_|_.__/|___/  \___|_|\___/ \__,_|\__,_|
+
+
+
+Last login: Mon Jan  8 09:20:15 2024 from 10.9.8.250
+ubuntu@dev-athira-opens5g:~$ cd VoNR/
+ubuntu@dev-athira-opens5g:~/VoNR$ cd docker_open5gs/
+ubuntu@dev-athira-opens5g:~/VoNR/docker_open5gs$ sudo su
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                                                                                                  NAMES
+995ed6a7e254   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   0.0.0.0:2152->2152/udp, :::2152->2152/udp, 8805/udp, 9091/tcp                                          upf
+5a01bf475b9a   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   2123/udp, 3868/sctp, 3868/tcp, 3868/udp, 5868/tcp, 5868/udp, 7777/tcp, 8805/udp, 5868/sctp, 9091/tcp   smf
+e928680b0ca8   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp, 9091/tcp, 0.0.0.0:38412->38412/sctp, :::38412->38412/sctp                                    amf
+237590b3b456   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               ausf
+4644c7c8779c   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               bsf
+6ab8098541c7   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               udr
+83cb16198a75   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp                                                              webui
+c7c2d75b6921   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               nssf
+3deca57a2fa1   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               udm
+d9a4b140ebde   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp, 9091/tcp                                                                                     pcf
+6f4d73ed0699   docker_metrics   "/bin/sh -c /mnt/met…"   10 minutes ago   Up 10 minutes   0.0.0.0:9090->9090/tcp, :::9090->9090/tcp                                                              metrics
+c60857c528b3   mongo:6.0        "docker-entrypoint.s…"   10 minutes ago   Up 10 minutes   27017/tcp, 27017/udp                                                                                   mongo
+2cddb723d891   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               nrf
+e0df669c15eb   docker_open5gs   "/bin/sh -c /open5gs…"   10 minutes ago   Up 10 minutes   7777/tcp                                                                                               scp
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#

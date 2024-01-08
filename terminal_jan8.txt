@@ -1,0 +1,1175 @@
+     +--------------------------------------------------------------------+
+     ¦                • MobaXterm Personal Edition v23.0 •                ¦
+     ¦              (X server, SSH client and network tools)              ¦
+     ¦                                                                    ¦
+     ¦ ? Your computer drives are accessible through the /drives path     ¦
+     ¦ ? Your DISPLAY is set to 192.168.1.4:0.0                           ¦
+     ¦ ? When using SSH, your remote DISPLAY is automatically forwarded   ¦
+     ¦ ? Each command status is specified by a special symbol (? or ?)    ¦
+     ¦                                                                    ¦
+     ¦ • Important:                                                       ¦
+     ¦ This is MobaXterm Personal Edition. The Professional edition       ¦
+     ¦ allows you to customize MobaXterm for your company: you can add    ¦
+     ¦ your own logo, your parameters, your welcome message and generate  ¦
+     ¦ either an MSI installation package or a portable executable.       ¦
+     ¦ We can also modify MobaXterm or develop the plugins you need.      ¦
+     ¦ For more information: https://mobaxterm.mobatek.net/download.html  ¦
+     +--------------------------------------------------------------------+
+ ? 08/01/2024 ? ? 14:47.27 ? ? /home/mobaxterm ? ssh  ubuntu@172.16.5.140
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-126-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jan  8 09:19:36 UTC 2024
+
+  System load:                      0.0
+  Usage of /:                       9.7% of 154.88GB
+  Memory usage:                     16%
+  Swap usage:                       3%
+  Processes:                        190
+  Users logged in:                  0
+  IPv4 address for br-170d4e3da6e1: 172.18.0.1
+  IPv4 address for br-dbcfae3aa5f5: 172.19.0.1
+  IPv4 address for docker0:         172.17.0.1
+  IPv4 address for ens3:            172.16.5.140
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+*** System restart required ***
+                                        _       _                _                 _
+               __      ____ ___   _____| | __ _| |__  ___    ___| | ___  _   _  __| |
+               \ \ /\ / / _` \ \ / / _ \ |/ _` | '_ \/ __|  / __| |/ _ \| | | |/ _` |
+                \ V  V / (_| |\ V /  __/ | (_| | |_) \__ \ | (__| | (_) | |_| | (_| |
+                 \_/\_/ \__,_| \_/ \___|_|\__,_|_.__/|___/  \___|_|\___/ \__,_|\__,_|
+
+
+
+Last login: Fri Jan  5 08:15:36 2024 from 10.9.8.250
+ubuntu@dev-athira-opens5g:~$ ls
+VoNR
+ubuntu@dev-athira-opens5g:~$ cd VoNR/
+ubuntu@dev-athira-opens5g:~/VoNR$ ls
+PCRF_trials  docker_open5gs  flask
+ubuntu@dev-athira-opens5g:~/VoNR$ cd flask/
+ubuntu@dev-athira-opens5g:~/VoNR/flask$ ls
+app.py  payload.py
+ubuntu@dev-athira-opens5g:~/VoNR/flask$
+ubuntu@dev-athira-opens5g:~/VoNR/flask$
+ubuntu@dev-athira-opens5g:~/VoNR/flask$
+ubuntu@dev-athira-opens5g:~/VoNR/flask$ sudo su
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 103-098-557
+127.0.0.1 - - [08/Jan/2024 09:23:43] "POST /npcf-policyauthorization/v1/app-sessions HTTP/1.1" 200 -
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 payload.py
+Generated JSON Payload for POST Request:
+{
+  "method": "POST",
+  "endpoint": "/npcf-policyauthorization/v1/app-sessions",
+  "data": {
+    "session_id": "123456",
+    "destination_host": "pcf.example.com",
+    "destination_realm": "example.com"
+  }
+}
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 payload.py
+Generated JSON Payload for POST Request:
+{
+  "method": "POST",
+  "endpoint": "/npcf-policyauthorization/v1/app-sessions",
+  "data": {
+    "session_id": "123456",
+    "destination_host": "pcf.example.com",
+    "destination_realm": "example.com"
+  }
+}
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 payload.py
+Generated JSON Payload for POST Request:
+{
+  "method": "POST",
+  "endpoint": "/npcf-policyauthorization/v1/app-sessions",
+  "data": {
+    "session_id": "123456",
+    "destination_host": "pcf.example.com",
+    "destination_realm": "example.com"
+  }
+}
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 payload.py
+Generated JSON Payload for POST Request:
+{
+  "method": "POST",
+  "endpoint": "/npcf-policyauthorization/v1/app-sessions",
+  "data": {
+    "session_id": "123456",
+    "destination_host": "pcf.example.com",
+    "destination_realm": "example.com"
+  }
+}
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# curl -X POST -H "Content-Type: application/json" -d '{
+>   "session_id": "123456",
+>   "destination_host": "pcf.example.com",
+>   "destination_realm": "example.com"
+> }' http://localhost:5000/npcf-policyauthorization/v1/app-sessions
+curl: (7) Failed to connect to localhost port 5000: Connection refused
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# rm -rf payload.py
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 103-098-557
+127.0.0.1 - - [08/Jan/2024 09:28:23] "POST /npcf-policyauthorization/v1/app-sessions HTTP/1.1" 200 -
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# policyauthorization/v1/app-sessions HTTP/1.1" 200 -
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# vi app.py
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# python3 app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 103-098-557
+127.0.0.1 - - [08/Jan/2024 09:33:55] "POST /npcf-policyauthorization/v1/app-sessions HTTP/1.1" 200 -
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/flask# cd ..
+root@dev-athira-opens5g:/home/ubuntu/VoNR# ls
+PCRF_trials  docker_open5gs  flask
+root@dev-athira-opens5g:/home/ubuntu/VoNR# cd docker_open5gs/
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# sudo su
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# lsof -i:2152
+COMMAND      PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+open5gs-s 295964 root   14u  IPv4 494002      0t0  UDP localhost:2152
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# kill 295964
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker compose -f sa-deploy.yaml up
+[+] Running 14/0
+ ? Container metrics  Running                                                                                                          0.0s
+ ? Container mongo    Running                                                                                                          0.0s
+ ? Container nrf      Running                                                                                                          0.0s
+ ? Container scp      Running                                                                                                          0.0s
+ ? Container webui    Running                                                                                                          0.0s
+ ? Container udm      Running                                                                                                          0.0s
+ ? Container ausf     Running                                                                                                          0.0s
+ ? Container udr      Running                                                                                                          0.0s
+ ? Container pcf      Running                                                                                                          0.0s
+ ? Container bsf      Running                                                                                                          0.0s
+ ? Container nssf     Running                                                                                                          0.0s
+ ? Container amf      Running                                                                                                          0.0s
+ ? Container smf      Running                                                                                                          0.0s
+ ? Container upf      Created                                                                                                          0.0s
+Attaching to amf, ausf, bsf, metrics, mongo, nrf, nssf, pcf, scp, smf, udm, udr, upf, webui
+upf      | Deploying component: 'upf-1'
+upf      | RTNETLINK answers: Permission denied
+upf      | RTNETLINK answers: Permission denied
+upf      | Open5GS daemon v2.6.6
+upf      |
+upf      | 01/08 11:51:58.144: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:126)
+upf      | 01/08 11:51:58.144: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:129)
+upf      | 01/08 11:51:58.177: [metrics] INFO: metrics_server() [http://172.22.0.8]:9091 (../lib/metrics/prometheus/context.c:299)
+upf      | 01/08 11:51:58.177: [pfcp] INFO: pfcp_server() [172.22.0.8]:8805 (../lib/pfcp/path.c:30)
+upf      | 01/08 11:51:58.177: [pfcp] INFO: ogs_pfcp_connect() [172.22.0.7]:8805 (../lib/pfcp/path.c:61)
+upf      | 01/08 11:51:58.177: [gtp] INFO: gtp_server() [172.22.0.8]:2152 (../lib/gtp/path.c:30)
+upf      | 01/08 11:51:58.177: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+smf      | 01/08 11:51:58.179: [smf] INFO: PFCP associated [172.22.0.8]:8805 (../src/smf/pfcp-sm.c:196)
+upf      | 01/08 11:51:58.179: [upf] INFO: PFCP associated [172.22.0.7]:8805 (../src/upf/pfcp-sm.c:184)
+upf      | 01/08 11:51:58.339: [upf] WARNING: PFCP[REQ] has already been associated [172.22.0.7]:8805 (../src/upf/pfcp-sm.c:270)
+smf      | 01/08 11:51:58.339: [smf] WARNING: PFCP[RSP] has already been associated [172.22.0.8]:8805 (../src/smf/pfcp-sm.c:299)
+
+
+Gracefully stopping... (press Ctrl+C again to force)
+Aborting on container exit...
+[+] Stopping 0/4
+[+] Stopping 14/14    Stopping                                                                                                         0.5s
+ ? Container upf      Stopped                                                                                                         10.5s
+ ? Container nssf     Stopped                                                                                                         10.4s
+ ? Container webui    Stopped                                                                                                         10.6s
+ ? Container metrics  Stopped                                                                                                         10.5s
+ ? Container smf      Stopped                                                                                                         10.3s
+ ? Container amf      Stopped                                                                                                         10.3s
+ ? Container bsf      Stopped                                                                                                         10.6s
+ ? Container udm      Stopped                                                                                                         10.6s
+ ? Container pcf      Stopped                                                                                                         10.5s
+ ? Container udr      Stopped                                                                                                         10.5s
+ ? Container ausf     Stopped                                                                                                         10.4s
+ ? Container nrf      Stopped                                                                                                         10.4s
+ ? Container mongo    Stopped                                                                                                          0.3s
+ ? Container scp      Stopped                                                                                                         10.3s
+canceled
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# 295964
+295964: command not found
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# sudo docker container stop $(sudo docker container ls -aq) &&
+> sudo docker container rm $(sudo docker container ls -aq) &&
+> sudo docker container prune -f &&
+> sudo docker image prune -a -f &&
+> sudo docker volume prune -f &&
+> sudo docker system prune -a &&
+> sudo docker system prune -f
+f0304c67dade
+5805f17e1423
+58d941f2b667
+b36f03eb04e1
+99c7e49c1d67
+0c90d6833700
+d44d2e56be72
+87ed93286210
+e766f09f0670
+9efc6e09f49b
+2baab12733b5
+a1e947869b7d
+12f413f86d44
+f7bb1429b8f3
+e5e5c0d15408
+f0304c67dade
+5805f17e1423
+58d941f2b667
+b36f03eb04e1
+99c7e49c1d67
+0c90d6833700
+d44d2e56be72
+87ed93286210
+e766f09f0670
+9efc6e09f49b
+2baab12733b5
+a1e947869b7d
+12f413f86d44
+f7bb1429b8f3
+e5e5c0d15408
+Total reclaimed space: 0B
+Deleted Images:
+untagged: docker_kamailio:latest
+deleted: sha256:3ba3158fa9e9a4a3fe28d284cf85484c9429bf1e563c683b7928ee3e697470d5
+untagged: docker_srsran:latest
+deleted: sha256:bc9fb534692ccdccfe0ec36b766ba7ade25e02f789baef7534f064d5db1bcdc1
+untagged: docker_open5gs:latest
+deleted: sha256:0393c8b55df09870e0a785fd12e3bc4528812a8436968faa659caf0c1c507fbe
+untagged: docker_metrics:latest
+deleted: sha256:98897dc8a8f26e227799fc55b588afed90711ad02dc42334ccad6df5a0bbe2ab
+untagged: mongo:6.0
+untagged: mongo@sha256:87b084965c08a667abdc9b570880497a475eb9231f0ac1e00626da720f8befdd
+deleted: sha256:6d5c2fe902ada88825e6b986021977cdcdf18923923c5e3c9b2c7fe928559124
+deleted: sha256:56568fc5f041b6795e074a54c53af97c846d7aca6ef721973eb265b21d24c155
+deleted: sha256:4fea9fb30efd9a6273d4bc92e88f72c0aadf6846f47f3e4c0858ec84bf02996c
+deleted: sha256:b585f1cfa8fd3e965f8c0b317b37422d811775be56d9f0dad559d7b4f6b20a54
+deleted: sha256:1c700bbe59160ce7e099876755f2a49d1e43f19cbcdaefc1ca1f0b2685b7ef41
+deleted: sha256:708aeac4fa8b2dfa7e07002258db45ad040a6bd2caf4bd2617886b7ac5743fc6
+deleted: sha256:062f16b274de8f99e33e54ae6acf3e345490bb2f6b36fad5fb07743bb9a5c403
+deleted: sha256:3ee36abf62c87afbc587bab2a88ddfb205955c6f1e3c798c62c3f5e78d4d1cea
+deleted: sha256:59bc471d7e848f6627d94c5e3d3e8ec6fbb6b0b8b63024901101e2c805160261
+
+Total reclaimed space: 612.1MB
+Total reclaimed space: 0B
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+docker_open5gs_default
+o5gnet
+open5gs-net
+
+Deleted build cache objects:
+1g4dus9gbhet4xgylv4bvjjxo
+q4g7bzo89cihljiijf0tr5nfb
+5r5ep52k1l1icvf2w2waf86ie
+latzia74shotut7ywzhzvyztg
+i2zl4eeemm3p1rzitsqzv4g4o
+ptfshhiuuur9uarvn5le2s7hv
+k7djxe75a9itu03gwvhjj8k2v
+4ewqpeci3r0zf6o79hvk6hvlq
+60tq8j4xuqw3li7z35bvwid5x
+jcnyp8wqu7bzfv7klte2zuhoq
+oeemu5331wauqupfgylfaibr4
+d4iq3p3k2cyq6tgjnz7cilzhb
+bm2erhm8rxhs0c7aoi8dkfxdz
+zs65y988ewfu8mdjqqt6zqzue
+ndqr7qy79ly8qg3qvbwfiqh4h
+4e7s6zkxt8crnqynxu492y127
+uz732vl4pzsly3exd1ld9zw4x
+l4hiy8grhvq7nq6qzjv470moh
+8iuvbp32n46muqejodhptee4d
+6ddo8hhfivl291xlhnh4160te
+kst5ago4r497maul4at0rykjh
+y9o2tj9hoihkerr1namnmq55w
+5s1e728d7c6h6a9wt4zrv1r8l
+8eo6tx3lf3i1suf0yilqksmdw
+qev2ehdbosws8p3yo032o49mx
+kr20638kuhydrbeld8p7xxm2x
+i8drr4onnd44gnvjs74h1qd8n
+r163watmgrp380jwuq22ij65o
+mmnaynssi32mlmxi7bgnb3ds3
+z3is30a1et2gciz9jryh2fv83
+5lwbs11hdbfydsbee0mu5w3te
+8eaiqe7fbfxme36u5wbrj2tnh
+hdxg84m3qz9madu2xcjt1xqd5
+upfyary7f8tdnljjh60d2sxbf
+r9o0nk2vr0btb6e1ktgj97o0u
+i1u0ncchjv77r6ytrznhz8cpr
+8l3ygtznt68x4rdc24dxs6jsv
+vj1czwiqr3149jltmycr1lv8s
+v8iy5udbhis806dl118u2jdsu
+70fkkb1ovp1vzutimb03h2fdh
+rwn278aekqfyc6z9slefjkb4v
+hr5xs3vceoebm0hmr3dty47oy
+uzisvivczbgsxm6fm86bn773t
+s3e3q0hskw2qy3gpuukl4bjyf
+bgo91otnxy7efuh1kq6m65c0x
+o1cfzkvub1f7oob7qxkjn8vec
+9jej9tet1acj5zw8wedkdcbk3
+puv5rqssn770xzn0v0eipwmj6
+d1km7habvsgz2w9syare8nqzk
+jegzc89jyzs7g0gtv2jzuba45
+4ed54sox5nahb233outwtx8s0
+6pwzglbsgr3nqg551y8smm2s7
+cxprh5o9aziswmjqgp5l1jnp2
+pulycw5e2ua2dlmmd70n3suu9
+t401kk96aq0lklgzircvd7evt
+f3gnj6ryy3vkir9jurx7utywe
+7of3uf5jwxmb2ixhdjyycj56s
+chswe5sbltvf3cc2tb7od5hdw
+igvpetk35qzxt0hct5h4rzgr0
+ld867ljhgo78w1bn6cttzfcc7
+f9i7ap1dksznetktdcx033t5f
+4byqvb8ote8cb3ghrxg4vphmf
+z16in1qor7651h2tq3k3z64r0
+z6up0jgz8w4hcnl0sir3dqy90
+rgpdl72qafs9n2oie3fg2igx9
+i6f4d72hkxnmfr1jfiq498m9i
+9zz3zardisnrlnrvorb748u1m
+qvxgnsegt065ciwnhntlbhz1h
+q0v15jnxlp8kwfjg2cnjyl55s
+p846fkspvga2mfui50xolqap9
+wpejsjcl0lr5h6spescwk0o87
+b0xar32p6xnborpwfb37cx29r
+g3j2arwykwjvq8tg63ue1ra2s
+a115z2dhri45vhlkv8rydobpp
+34o5dt62i2b158njg6xua5rxm
+0jyed06xyka8iy9yu8qhff5fr
+z7kop1k31ppdwt9slu4loxovb
+ndg44rtl1jrgagvif510f1ln2
+wikb3ja1872qwcgw4mvyqix8o
+q1bnnflz5k8xuc1xasb2qi4at
+su3vg6anf0z2nlzepb6fao158
+oa3el4s04ulii38v3rlaozj6h
+v8eb4chz0gu4wg65qy8ruwc86
+ioywa6dns6rl9bjaox7arnrjp
+lsbmmq1m9kkzsb96fmdyycpdj
+wbcrq90m70fgeomizu2mviuk6
+w0riio01jzoc5ua8120xzzhgx
+20dynpva7s91jjk6ik2n20nos
+0n1cock4ql8nz81eg9jf1ukcr
+pf8aabalvoztnzy2g7zvxk5zk
+hepmdascrqzbaibpz2q9851wr
+tcfhcha4a6w1xfjhy91icdj1k
+kgjykm8f1lr0a1im322b8i0b2
+aeanbjw1lse692smp2drjhy5m
+lbgh0peyzkc2vqwwgthdqz2sj
+t45lgl5ch92l1ml9x5ws9nl7u
+kbppod02nws0vsaz32mk37qyo
+wej55ruzcu5mxyxtuz134ev6b
+rnh44za0c7h8ibcozu6ltw6w4
+heoyb2pk5wniiayz0mt1p0c4p
+5hgmmfyf7uwt2anby37ur93on
+07jgpndloryxzbqa3v8ptfg9d
+lgjypezh63o77aiioz6tq2t84
+t4sfulbqsr2tccbkm0gnaki1r
+om9yqs9dnv1kfd59f7lbysx1b
+vxoo2lvds9ewy412nq713vo05
+c4xsbas7pqwb54lwb6i6l213a
+xscz05jk5qoqoz74jqd7zuy3m
+vxcsrizq6q14trsjm7r6s7eym
+x7iix5al4e22me66z2nstw3ib
+l9yufxkvg286jaz177kim4v9v
+koz1nmvngzf536bbh4pqjbqwr
+bvbovmuze9dtd881aodrmin70
+xa3vkdpu3udr8ldekkk42mhi4
+lmcgp5muzdewibk13q10tt9w9
+mwkw22s999h4rduzkeadcdsyn
+8gpydjcs9xk47js8kho2t1u08
+z49q7405c2g1l5eji16mhiz82
+pv4hl6r7pi705pnwr8pxln4w6
+frcjkhwycea9hi4geos4c4ab6
+lt1d8v6nrehpwfuyod4kp0q2n
+tqh2vvwf9jagf0fl3kzl5rb5o
+xb14krartpkczchck3avh1s35
+4h8mqq0mr158zehqgp2gpsxx6
+job4jkyojvzrubiucx4ily16d
+phu50ehikv6ss9m11bojq05gl
+ie74n04wynj2wevr4uwnrax4g
+9lhsf2vf3k19oq755c3j4s7py
+n0v6f4iflwsjp9lzw99hutb9x
+w05zk5knoel82orxqpztkv1bx
+l2amutmiijt54iufmk5kj81k6
+
+Total reclaimed space: 14.99GB
+Total reclaimed space: 0B
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker-compose version
+Docker Compose version v2.23.3
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# git clone https://github.com/herlesupreeth/docker_open5gs
+Cloning into 'docker_open5gs'...
+remote: Enumerating objects: 2827, done.
+remote: Counting objects: 100% (1404/1404), done.
+remote: Compressing objects: 100% (531/531), done.
+remote: Total 2827 (delta 1066), reused 1090 (delta 873), pack-reused 1423
+Receiving objects: 100% (2827/2827), 517.36 KiB | 5.07 MiB/s, done.
+Resolving deltas: 100% (1788/1788), done.
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.11.2)
+  compose*    Docker Compose (Docker Inc., v2.21.0)
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set
+                           with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker --version
+Docker version 24.0.7, build afdd53b
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# ls
+4g-external-ims-deploy.yaml  bsf              log          nssf         pcrf                 scscf        srsenb_zmq.yaml    udm
+4g-volte-deploy.yaml         deploy-all.yaml  metrics      oai          pcscf                sgwc         srsgnb.yaml        udr
+LICENSE                      dns              mme          oaienb.yaml  pyhss                sgwu         srsgnb_zmq.yaml    ueransim
+README.md                    docker_open5gs   mysql        oaignb.yaml  rtpengine            sim          srslte             upf
+amf                          hss              nr-gnb.yaml  osmohlr      sa-deploy.yaml       smf          srsran             webui
+ausf                         icscf            nr-ue.yaml   osmomsc      sa-vonr-deploy.yaml  smsc         srsue_5g_zmq.yaml
+base                         ims_base         nrf          pcf          scp                  srsenb.yaml  srsue_zmq.yaml
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# cd base/
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs/base# docker build --no-cache --force-rm -t docker_open5gs .
+[+] Building 452.9s (24/24) FINISHED                                                                                         docker:default
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+ => => transferring dockerfile: 4.44kB                                                                                                 0.0s
+ => [internal] load .dockerignore                                                                                                      0.0s
+ => => transferring context: 2B                                                                                                        0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:focal                                                                        3.1s
+ => [auth] library/ubuntu:pull token for registry-1.docker.io                                                                          0.0s
+ => [internal] load build context                                                                                                      0.0s
+ => => transferring context: 4.59kB                                                                                                    0.0s
+ => [builder 1/6] FROM docker.io/library/ubuntu:focal@sha256:f2034e7195f61334e6caff6ecf2e965f92d11e888309065da85ff50c617732b8         12.3s
+ => => resolve docker.io/library/ubuntu:focal@sha256:f2034e7195f61334e6caff6ecf2e965f92d11e888309065da85ff50c617732b8                  0.0s
+ => => sha256:527f5363b98e562da03d2e0bbf86fd7c34f487bffd9b27a3cf0a9afea2f0ee1f 27.51MB / 27.51MB                                      11.2s
+ => => sha256:f2034e7195f61334e6caff6ecf2e965f92d11e888309065da85ff50c617732b8 1.13kB / 1.13kB                                         0.0s
+ => => sha256:bac6081102aae54ba4bcc714695b8f637e42768c7f376f374c428bab043ddc0f 424B / 424B                                             0.0s
+ => => sha256:f78909c2b360d866b3220655c0b079838258b8891a12ac25fc670f0cbb54229f 2.30kB / 2.30kB                                         0.0s
+ => => extracting sha256:527f5363b98e562da03d2e0bbf86fd7c34f487bffd9b27a3cf0a9afea2f0ee1f                                              0.8s
+ => [stage-1  2/13] RUN apt-get update &&     apt-get install -y --no-install-recommends         curl         ca-certificates        141.8s
+ => [builder 2/6] RUN apt-get update &&     apt-get install -y --no-install-recommends         python3-pip         python3-setuptoo  179.3s
+ => [stage-1  3/13] RUN pip3 install click                                                                                             2.4s
+ => [stage-1  4/13] RUN mkdir -p /etc/apt/keyrings                                                                                     0.6s
+ => [stage-1  5/13] RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/no  28.8s
+ => [stage-1  6/13] RUN update-ca-certificates                                                                                         1.2s
+ => [builder 3/6] RUN mkdir -p /etc/apt/keyrings                                                                                       0.3s
+ => [builder 4/6] RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/node  32.2s
+ => [builder 5/6] RUN git clone --recursive https://github.com/open5gs/open5gs && cd open5gs &&     git checkout tags/v2.6.6 && mes  192.6s
+ => [builder 6/6] RUN cd open5gs/webui && npm ci                                                                                      24.6s
+ => [stage-1  7/13] COPY --from=builder /open5gs/install/bin /open5gs/install/bin                                                      0.4s
+ => [stage-1  8/13] COPY --from=builder /open5gs/install/etc /open5gs/install/etc                                                      0.1s
+ => [stage-1  9/13] COPY --from=builder /open5gs/install/include /open5gs/install/include                                              0.0s
+ => [stage-1 10/13] COPY --from=builder /open5gs/install/lib /open5gs/install/lib                                                      0.7s
+ => [stage-1 11/13] COPY --from=builder /open5gs/webui /open5gs/webui                                                                  3.1s
+ => [stage-1 12/13] WORKDIR open5gs                                                                                                    0.0s
+ => [stage-1 13/13] COPY open5gs_init.sh /                                                                                             0.0s
+ => exporting to image                                                                                                                 2.2s
+ => => exporting layers                                                                                                                2.1s
+ => => writing image sha256:79d1c30eed45820582c8c148d99a8852c85420fbd1bab2cf177efb3262f68fa0                                           0.0s
+ => => naming to docker.io/library/docker_open5gs                                                                                      0.0s
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs/base# cd ..
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# set -a
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# source .env
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# sudo ufw disable
+Firewall stopped and disabled on system startup
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# sudo sysctl -w net.ipv4.ip_forward=1
+net.ipv4.ip_forward = 1
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# docker compose -f sa-deploy.yaml build
+[+] Building 275.2s (7/7) FINISHED                                                                                           docker:default
+ => [metrics internal] load build definition from Dockerfile                                                                           0.0s
+ => => transferring dockerfile: 1.84kB                                                                                                 0.0s
+ => [metrics internal] load .dockerignore                                                                                              0.0s
+ => => transferring context: 2B                                                                                                        0.0s
+ => [metrics internal] load metadata for docker.io/library/ubuntu:focal                                                                1.8s
+ => [metrics auth] library/ubuntu:pull token for registry-1.docker.io                                                                  0.0s
+ => CACHED [metrics 1/2] FROM docker.io/library/ubuntu:focal@sha256:f2034e7195f61334e6caff6ecf2e965f92d11e888309065da85ff50c617732b8   0.0s
+ => [metrics 2/2] RUN apt-get update &&     apt-get install -y wget &&     wget -q https://github.com/prometheus/prometheus/release  271.7s
+ => [metrics] exporting to image                                                                                                       1.6s
+ => => exporting layers                                                                                                                1.6s
+ => => writing image sha256:93e4dda5658201495bf6a9863444ade81791997bba76b8bcce36fb8ca0e618bf                                           0.0s
+ => => naming to docker.io/library/docker_metrics                                                                                      0.0s
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# vim .env
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs# vi sa-deploy.yaml
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#
+root@dev-athira-opens5g:/home/ubuntu/VoNR/docker_open5gs#   sudo docker-compose -f sa-deploy.yaml up --remove-orphans
+[+] Running 10/10
+ ? mongo 9 layers [?????????]      0B/0B      Pulled                                                                                  97.9s
+   ? a48641193673 Pull complete                                                                                                       15.6s
+   ? cc0c419a0ab4 Pull complete                                                                                                        0.8s
+   ? a8ae9ec9a6c8 Pull complete                                                                                                        5.8s
+   ? 7abeba89c4f2 Pull complete                                                                                                        5.4s
+   ? c36691189d2b Pull complete                                                                                                        6.2s
+   ? 586188b51ee3 Pull complete                                                                                                        6.6s
+   ? 6a4cb0b39af2 Pull complete                                                                                                        7.0s
+   ? ce183a115636 Pull complete                                                                                                       94.1s
+   ? 1f9cc3c0de71 Pull complete                                                                                                        8.4s
+[+] Running 15/14
+ ? Network docker_open5gs_default  Created                                                                                             0.1s
+ ? Container nrf                   Created                                                                                             5.3s
+ ? Container mongo                 Created                                                                                             5.3s
+ ? Container metrics               Created                                                                                             5.3s
+ ? Container scp                   Created                                                                                             5.3s
+ ? Container webui                 Created                                                                                             0.1s
+ ? Container udr                   Created                                                                                             0.1s
+ ? Container ausf                  Created                                                                                             0.1s
+ ? Container pcf                   Created                                                                                             0.1s
+ ? Container nssf                  Created                                                                                             0.1s
+ ? Container bsf                   Created                                                                                             0.1s
+ ? Container udm                   Created                                                                                             0.1s
+ ? Container amf                   Created                                                                                             0.0s
+ ? Container smf                   Created                                                                                             0.0s
+ ? Container upf                   Created                                                                                             0.0s
+Attaching to amf, ausf, bsf, metrics, mongo, nrf, nssf, pcf, scp, smf, udm, udr, upf, webui
+scp      | Deploying component: 'scp-1'
+scp      | Open5GS daemon v2.6.6
+scp      |
+scp      | 01/08 12:26:56.847: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/scp.yaml' (../lib/app/ogs-init.c:126)
+scp      | 01/08 12:26:56.847: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/scp.log' (../lib/app/ogs-init.c:129)
+scp      | 01/08 12:26:56.851: [sbi] INFO: nghttp2_server() [http://172.22.0.35]:7777 (../lib/sbi/nghttp2-server.c:395)
+scp      | 01/08 12:26:56.852: [app] INFO: SCP initialize...done (../src/scp/app.c:31)
+metrics  | ts=2024-01-08T12:26:57.028Z caller=main.go:512 level=info msg="No time or size retention was set so using the default time retention" duration=15d
+metrics  | ts=2024-01-08T12:26:57.028Z caller=main.go:556 level=info msg="Starting Prometheus Server" mode=server version="(version=2.40.2, branch=HEAD, revision=a07a94a5abb8a979d8aa87297f77f3979148b2da)"
+metrics  | ts=2024-01-08T12:26:57.028Z caller=main.go:561 level=info build_context="(go=go1.19.3, user=root@1b4b53e3f125, date=20221117-13:40:12)"
+metrics  | ts=2024-01-08T12:26:57.028Z caller=main.go:562 level=info host_details="(Linux 5.4.0-126-generic #142-Ubuntu SMP Fri Aug 26 12:12:57 UTC 2022 x86_64 6f4d73ed0699 (none))"
+metrics  | ts=2024-01-08T12:26:57.028Z caller=main.go:563 level=info fd_limits="(soft=1048576, hard=1048576)"
+metrics  | ts=2024-01-08T12:26:57.028Z caller=main.go:564 level=info vm_limits="(soft=unlimited, hard=unlimited)"
+nrf      | Deploying component: 'nrf-1'
+metrics  | ts=2024-01-08T12:26:57.031Z caller=web.go:559 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
+metrics  | ts=2024-01-08T12:26:57.032Z caller=main.go:993 level=info msg="Starting TSDB ..."
+metrics  | ts=2024-01-08T12:26:57.036Z caller=head.go:562 level=info component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+metrics  | ts=2024-01-08T12:26:57.036Z caller=head.go:606 level=info component=tsdb msg="On-disk memory mappable chunks replay completed" duration=8.547µs
+metrics  | ts=2024-01-08T12:26:57.036Z caller=head.go:612 level=info component=tsdb msg="Replaying WAL, this may take a while"
+metrics  | ts=2024-01-08T12:26:57.044Z caller=tls_config.go:232 level=info component=web msg="Listening on" address=[::]:9090
+metrics  | ts=2024-01-08T12:26:57.044Z caller=tls_config.go:235 level=info component=web msg="TLS is disabled." http2=false address=[::]:9090
+metrics  | ts=2024-01-08T12:26:57.048Z caller=head.go:683 level=info component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+metrics  | ts=2024-01-08T12:26:57.048Z caller=head.go:720 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=25.077µs wal_replay_duration=11.650563ms wbl_replay_duration=136ns total_replay_duration=11.707006ms
+metrics  | ts=2024-01-08T12:26:57.056Z caller=main.go:1014 level=info fs_type=794c7630
+metrics  | ts=2024-01-08T12:26:57.056Z caller=main.go:1017 level=info msg="TSDB started"
+metrics  | ts=2024-01-08T12:26:57.056Z caller=main.go:1197 level=info msg="Loading configuration file" filename=/config/prometheus.yml
+metrics  | ts=2024-01-08T12:26:57.057Z caller=main.go:1234 level=info msg="Completed loading of configuration file" filename=/config/prometheus.yml totalDuration=881.574µs db_storage=1.748µs remote_storage=6.184µs web_handler=574ns query_engine=1.381µs scrape=318.728µs scrape_sd=87.344µs notify=1.303µs notify_sd=1.907µs rules=2.251µs tracing=19.18µs
+metrics  | ts=2024-01-08T12:26:57.057Z caller=main.go:978 level=info msg="Server is ready to receive web requests."
+metrics  | ts=2024-01-08T12:26:57.057Z caller=manager.go:944 level=info component="rule manager" msg="Starting rule manager..."
+nrf      | Open5GS daemon v2.6.6
+nrf      |
+nrf      | 01/08 12:26:57.058: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:126)
+nrf      | 01/08 12:26:57.058: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:129)
+nrf      | 01/08 12:26:57.061: [sbi] INFO: nghttp2_server() [http://172.22.0.12]:7777 (../lib/sbi/nghttp2-server.c:395)
+nrf      | 01/08 12:26:57.061: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.132+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.133+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.133+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.134+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.134+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.134+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.134+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.135+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"c60857c528b3"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.135+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.12","gitVersion":"21e6e8e11a45dfbdb7ca6cf95fa8c5f859e2b118","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.135+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.135+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"0.0.0.0"}}}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.136+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.136+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+mongo    | {"t":{"$date":"2024-01-08T12:26:57.136+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=7492M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+udm      | Deploying component: 'udm-1'
+udm      | Open5GS daemon v2.6.6
+udm      |
+udm      | 01/08 12:26:57.484: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:126)
+udm      | 01/08 12:26:57.484: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:129)
+udm      | 01/08 12:26:57.488: [sbi] INFO: NF Service [nudm-ueau] (../lib/sbi/context.c:1438)
+udm      | 01/08 12:26:57.488: [sbi] INFO: NF Service [nudm-uecm] (../lib/sbi/context.c:1438)
+udm      | 01/08 12:26:57.488: [sbi] INFO: NF Service [nudm-sdm] (../lib/sbi/context.c:1438)
+udm      | 01/08 12:26:57.489: [sbi] INFO: nghttp2_server() [http://172.22.0.13]:7777 (../lib/sbi/nghttp2-server.c:395)
+udm      | 01/08 12:26:57.489: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+bsf      | Deploying component: 'bsf-1'
+ausf     | Deploying component: 'ausf-1'
+ausf     | Open5GS daemon v2.6.6
+ausf     |
+ausf     | 01/08 12:26:57.702: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:126)
+ausf     | 01/08 12:26:57.702: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:129)
+ausf     | 01/08 12:26:57.707: [sbi] INFO: NF Service [nausf-auth] (../lib/sbi/context.c:1438)
+ausf     | 01/08 12:26:57.707: [sbi] INFO: nghttp2_server() [http://172.22.0.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+ausf     | 01/08 12:26:57.707: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+udr      | Deploying component: 'udr-1'
+nrf      | 01/08 12:26:57.878: [nrf] INFO: [369d8974-ae21-41ee-be8c-1d4463647953] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+nrf      | 01/08 12:26:57.878: [nrf] INFO: [36febaa0-ae21-41ee-9ded-0d408dba15a5] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+nrf      | 01/08 12:26:57.879: [nrf] INFO: [37201d08-ae21-41ee-b04a-a90411ea81b7] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+scp      | 01/08 12:26:57.879: [sbi] INFO: [369d8974-ae21-41ee-be8c-1d4463647953] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+nrf      | 01/08 12:26:57.881: [nrf] INFO: [373ace14-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.881939+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:57.882: [nrf] INFO: [373ae99e-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.882585+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:57.882: [nrf] INFO: [373af07e-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.882752+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:57.883: [nrf] INFO: [373b0ece-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.883531+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:57.883: [nrf] INFO: [373b152c-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.883689+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+scp      | 01/08 12:26:57.883: [sbi] INFO: [373ace14-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.881939+00:00 [duration:86400,validity:86399.998185,patch:43199.999092] (../lib/sbi/nnrf-handler.c:509)
+nrf      | 01/08 12:26:57.883: [nrf] INFO: [373b1fd6-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.883962+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:57.884: [nrf] INFO: [373b2c56-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.884309+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+ausf     | 01/08 12:26:57.884: [sbi] INFO: [37201d08-ae21-41ee-b04a-a90411ea81b7] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+nrf      | 01/08 12:26:57.884: [nrf] INFO: [373b4682-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.884955+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+udm      | 01/08 12:26:57.884: [sbi] INFO: [36febaa0-ae21-41ee-9ded-0d408dba15a5] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+scp      | 01/08 12:26:57.886: [sbi] INFO: [373ae99e-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.882585+00:00 [duration:86400,validity:86399.995896,patch:43199.997948] (../lib/sbi/nnrf-handler.c:509)
+nrf      | 01/08 12:26:57.886: [nrf] INFO: [373b867e-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.886669+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+scp      | 01/08 12:26:57.886: [sbi] INFO: [373af07e-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.882752+00:00 [duration:86400,validity:86399.995871,patch:43199.997935] (../lib/sbi/nnrf-handler.c:509)
+scp      | 01/08 12:26:57.887: [sbi] INFO: [373b0ece-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.883531+00:00 [duration:86400,validity:86399.996512,patch:43199.998256] (../lib/sbi/nnrf-handler.c:509)
+nrf      | 01/08 12:26:57.887: [nrf] INFO: [373bb31a-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.887787+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+scp      | 01/08 12:26:57.887: [sbi] INFO: [373b152c-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.883689+00:00 [duration:86400,validity:86399.995740,patch:43199.997870] (../lib/sbi/nnrf-handler.c:509)
+ausf     | 01/08 12:26:57.890: [sbi] INFO: [373b867e-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.886669+00:00 [duration:86400,validity:86399.996388,patch:43199.998194] (../lib/sbi/nnrf-handler.c:509)
+scp      | 01/08 12:26:57.889: [sbi] INFO: [373b1fd6-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.883962+00:00 [duration:86400,validity:86399.994174,patch:43199.997087] (../lib/sbi/nnrf-handler.c:509)
+scp      | 01/08 12:26:57.890: [sbi] INFO: [373b2c56-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.884309+00:00 [duration:86400,validity:86399.994228,patch:43199.997114] (../lib/sbi/nnrf-handler.c:509)
+scp      | 01/08 12:26:57.890: [sbi] INFO: [373b4682-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.884955+00:00 [duration:86400,validity:86399.994651,patch:43199.997325] (../lib/sbi/nnrf-handler.c:509)
+udm      | 01/08 12:26:57.890: [sbi] INFO: [373bb31a-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:57.887787+00:00 [duration:86400,validity:86399.996822,patch:43199.998411] (../lib/sbi/nnrf-handler.c:509)
+nssf     | Deploying component: 'nssf-1'
+pcf      | Deploying component: 'pcf-1'
+nssf     | Open5GS daemon v2.6.6
+nssf     |
+nssf     | 01/08 12:26:57.938: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nssf.yaml' (../lib/app/ogs-init.c:126)
+nssf     | 01/08 12:26:57.938: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nssf.log' (../lib/app/ogs-init.c:129)
+nssf     | 01/08 12:26:57.943: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/sbi/context.c:1438)
+nssf     | 01/08 12:26:57.944: [sbi] INFO: nghttp2_server() [http://172.22.0.28]:7777 (../lib/sbi/nghttp2-server.c:395)
+nssf     | 01/08 12:26:57.944: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+nrf      | 01/08 12:26:57.945: [nrf] INFO: [37443a58-ae21-41ee-a519-afc86bfa92c0] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+scp      | 01/08 12:26:57.946: [sbi] INFO: [37443a58-ae21-41ee-a519-afc86bfa92c0] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+scp      | 01/08 12:26:57.946: [sbi] INFO: [37443a58-ae21-41ee-a519-afc86bfa92c0] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+nssf     | 01/08 12:26:57.946: [sbi] INFO: [37443a58-ae21-41ee-a519-afc86bfa92c0] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+webui    | Deploying component: 'webui'
+amf      | Deploying component: 'amf-1'
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.285+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":1149}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.285+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.299+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.299+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.302+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.302+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.302+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+amf      | Open5GS daemon v2.6.6
+amf      |
+amf      | 01/08 12:26:58.304: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:126)
+amf      | 01/08 12:26:58.304: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:129)
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.305+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.305+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.309+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+amf      | 01/08 12:26:58.309: [metrics] INFO: metrics_server() [http://172.22.0.10]:9091 (../lib/metrics/prometheus/context.c:299)
+amf      | 01/08 12:26:58.309: [sbi] INFO: NF Service [namf-comm] (../lib/sbi/context.c:1438)
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.309+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+amf      | 01/08 12:26:58.310: [sbi] INFO: nghttp2_server() [http://172.22.0.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+amf      | 01/08 12:26:58.310: [amf] INFO: ngap_server() [172.22.0.10]:38412 (../src/amf/ngap-sctp.c:61)
+amf      | 01/08 12:26:58.310: [sctp] INFO: AMF initialize...done (../src/amf/app.c:33)
+nrf      | 01/08 12:26:58.311: [nrf] INFO: [377bdc60-ae21-41ee-9b2c-01fdf3d5f71c] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.311+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.311+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+mongo    | {"t":{"$date":"2024-01-08T12:26:58.311+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+scp      | 01/08 12:26:58.312: [sbi] INFO: [377bdc60-ae21-41ee-9b2c-01fdf3d5f71c] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+scp      | 01/08 12:26:58.312: [sbi] INFO: [377bdc60-ae21-41ee-9b2c-01fdf3d5f71c] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+amf      | 01/08 12:26:58.313: [sbi] INFO: [377bdc60-ae21-41ee-9b2c-01fdf3d5f71c] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+nrf      | 01/08 12:26:58.313: [nrf] INFO: [377cba22-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.313924+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:58.314: [nrf] INFO: [377cc65c-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314206+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:58.314: [nrf] INFO: [377ccc74-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314360+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:58.314: [nrf] INFO: [377cd4bc-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314572+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:58.314: [nrf] INFO: [377cd9b2-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314699+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:58.314: [nrf] INFO: [377ce222-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314918+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+amf      | 01/08 12:26:58.315: [sbi] INFO: [377cba22-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.313924+00:00 [duration:86400,validity:86399.998811,patch:43199.999405] (../lib/sbi/nnrf-handler.c:509)
+amf      | 01/08 12:26:58.315: [sbi] INFO: [377cc65c-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314206+00:00 [duration:86400,validity:86399.998599,patch:43199.999299] (../lib/sbi/nnrf-handler.c:509)
+amf      | 01/08 12:26:58.315: [sbi] INFO: [377ccc74-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314360+00:00 [duration:86400,validity:86399.998449,patch:43199.999224] (../lib/sbi/nnrf-handler.c:509)
+amf      | 01/08 12:26:58.315: [sbi] INFO: [377cd4bc-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314572+00:00 [duration:86400,validity:86399.998627,patch:43199.999313] (../lib/sbi/nnrf-handler.c:509)
+amf      | 01/08 12:26:58.316: [sbi] INFO: [377cd9b2-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314699+00:00 [duration:86400,validity:86399.998609,patch:43199.999304] (../lib/sbi/nnrf-handler.c:509)
+amf      | 01/08 12:26:58.316: [sbi] INFO: [377ce222-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:58.314918+00:00 [duration:86400,validity:86399.998705,patch:43199.999352] (../lib/sbi/nnrf-handler.c:509)
+smf      | Deploying component: 'smf-1'
+smf      | Generating a RSA private key
+smf      | ..................+++++
+smf      | .......+++++
+smf      | writing new private key to 'cakey.pem'
+smf      | -----
+smf      | Generating RSA private key, 1024 bit long modulus (2 primes)
+smf      | ......................................+++++
+smf      | .................................+++++
+smf      | e is 65537 (0x010001)
+smf      | Using configuration from /usr/lib/ssl/openssl.cnf
+smf      | Check that the request matches the signature
+smf      | Signature ok
+smf      | Certificate Details:
+smf      |         Serial Number: 1 (0x1)
+smf      |         Validity
+smf      |             Not Before: Jan  8 12:26:58 2024 GMT
+smf      |             Not After : Jan  5 12:26:58 2034 GMT
+smf      |         Subject:
+smf      |             countryName               = KO
+smf      |             stateOrProvinceName       = Seoul
+smf      |             organizationName          = Open5GS
+smf      |             organizationalUnitName    = Tests
+smf      |             commonName                = mme.epc.mnc007.mcc404.3gppnetwork.org
+smf      |         X509v3 extensions:
+smf      |             X509v3 Basic Constraints:
+smf      |                 CA:FALSE
+smf      |             Netscape Comment:
+smf      |                 OpenSSL Generated Certificate
+smf      |             X509v3 Subject Key Identifier:
+smf      |                 65:B0:93:CD:B8:A5:CC:00:56:73:F4:D6:A0:F9:B5:52:CD:B5:63:1D
+smf      |             X509v3 Authority Key Identifier:
+smf      |                 keyid:83:AD:14:17:58:73:BB:0F:C0:11:24:BC:E3:33:98:14:1D:D0:44:A4
+smf      |
+smf      | Certificate is to be certified until Jan  5 12:26:58 2034 GMT (3650 days)
+smf      |
+smf      | Write out database with 1 new entries
+smf      | Data Base Updated
+smf      | Generating RSA private key, 1024 bit long modulus (2 primes)
+smf      | ............+++++
+upf      | Deploying component: 'upf-1'
+smf      | ......................................................+++++
+smf      | e is 65537 (0x010001)
+smf      | Using configuration from /usr/lib/ssl/openssl.cnf
+smf      | Check that the request matches the signature
+smf      | Signature ok
+smf      | Certificate Details:
+smf      |         Serial Number: 2 (0x2)
+smf      |         Validity
+smf      |             Not Before: Jan  8 12:26:58 2024 GMT
+smf      |             Not After : Jan  5 12:26:58 2034 GMT
+smf      |         Subject:
+smf      |             countryName               = KO
+smf      |             stateOrProvinceName       = Seoul
+smf      |             organizationName          = Open5GS
+smf      |             organizationalUnitName    = Tests
+smf      |             commonName                = hss.epc.mnc007.mcc404.3gppnetwork.org
+smf      |         X509v3 extensions:
+smf      |             X509v3 Basic Constraints:
+smf      |                 CA:FALSE
+smf      |             Netscape Comment:
+smf      |                 OpenSSL Generated Certificate
+smf      |             X509v3 Subject Key Identifier:
+smf      |                 A3:A8:5D:05:AA:40:3C:CC:F8:AE:06:7A:38:22:16:29:E7:F0:ED:2A
+smf      |             X509v3 Authority Key Identifier:
+smf      |                 keyid:83:AD:14:17:58:73:BB:0F:C0:11:24:BC:E3:33:98:14:1D:D0:44:A4
+smf      |
+smf      | Certificate is to be certified until Jan  5 12:26:58 2034 GMT (3650 days)
+smf      |
+smf      | Write out database with 1 new entries
+smf      | Data Base Updated
+smf      | Generating RSA private key, 1024 bit long modulus (2 primes)
+smf      | ....................................+++++
+smf      | ............+++++
+smf      | e is 65537 (0x010001)
+upf      | RTNETLINK answers: Permission denied
+smf      | Using configuration from /usr/lib/ssl/openssl.cnf
+smf      | Check that the request matches the signature
+smf      | Signature ok
+smf      | Certificate Details:
+smf      |         Serial Number: 3 (0x3)
+smf      |         Validity
+smf      |             Not Before: Jan  8 12:26:58 2024 GMT
+smf      |             Not After : Jan  5 12:26:58 2034 GMT
+smf      |         Subject:
+smf      |             countryName               = KO
+smf      |             stateOrProvinceName       = Seoul
+smf      |             organizationName          = Open5GS
+smf      |             organizationalUnitName    = Tests
+smf      |             commonName                = smf.epc.mnc007.mcc404.3gppnetwork.org
+smf      |         X509v3 extensions:
+smf      |             X509v3 Basic Constraints:
+smf      |                 CA:FALSE
+smf      |             Netscape Comment:
+smf      |                 OpenSSL Generated Certificate
+smf      |             X509v3 Subject Key Identifier:
+smf      |                 AC:A7:D3:C1:52:7C:0F:C9:F8:4F:24:B3:85:08:F1:5D:58:A8:40:F8
+smf      |             X509v3 Authority Key Identifier:
+smf      |                 keyid:83:AD:14:17:58:73:BB:0F:C0:11:24:BC:E3:33:98:14:1D:D0:44:A4
+smf      |
+smf      | Certificate is to be certified until Jan  5 12:26:58 2034 GMT (3650 days)
+smf      |
+smf      | Write out database with 1 new entries
+smf      | Data Base Updated
+smf      | Generating RSA private key, 1024 bit long modulus (2 primes)
+smf      | ...................+++++
+smf      | ......+++++
+smf      | e is 65537 (0x010001)
+smf      | Using configuration from /usr/lib/ssl/openssl.cnf
+smf      | Check that the request matches the signature
+smf      | Signature ok
+smf      | Certificate Details:
+smf      |         Serial Number: 4 (0x4)
+smf      |         Validity
+smf      |             Not Before: Jan  8 12:26:58 2024 GMT
+smf      |             Not After : Jan  5 12:26:58 2034 GMT
+smf      |         Subject:
+smf      |             countryName               = KO
+smf      |             stateOrProvinceName       = Seoul
+smf      |             organizationName          = Open5GS
+smf      |             organizationalUnitName    = Tests
+smf      |             commonName                = pcrf.epc.mnc007.mcc404.3gppnetwork.org
+smf      |         X509v3 extensions:
+smf      |             X509v3 Basic Constraints:
+smf      |                 CA:FALSE
+smf      |             Netscape Comment:
+smf      |                 OpenSSL Generated Certificate
+smf      |             X509v3 Subject Key Identifier:
+smf      |                 F1:89:04:67:1B:31:3D:5B:14:21:2E:02:EB:72:A4:33:81:D3:15:C2
+smf      |             X509v3 Authority Key Identifier:
+smf      |                 keyid:83:AD:14:17:58:73:BB:0F:C0:11:24:BC:E3:33:98:14:1D:D0:44:A4
+smf      |
+smf      | Certificate is to be certified until Jan  5 12:26:58 2034 GMT (3650 days)
+smf      |
+smf      | Write out database with 1 new entries
+smf      | Data Base Updated
+smf      | Open5GS daemon v2.6.6
+smf      |
+smf      | 01/08 12:26:59.019: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:126)
+smf      | 01/08 12:26:59.019: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:129)
+upf      | RTNETLINK answers: Permission denied
+smf      | 01/08 12:26:59.072: [metrics] INFO: metrics_server() [http://172.22.0.7]:9091 (../lib/metrics/prometheus/context.c:299)
+smf      | 01/08 12:26:59.125: [gtp] INFO: gtp_server() [172.22.0.7]:2123 (../lib/gtp/path.c:30)
+smf      | 01/08 12:26:59.125: [gtp] INFO: gtp_server() [172.22.0.7]:2152 (../lib/gtp/path.c:30)
+smf      | 01/08 12:26:59.125: [pfcp] INFO: pfcp_server() [172.22.0.7]:8805 (../lib/pfcp/path.c:30)
+smf      | 01/08 12:26:59.125: [pfcp] INFO: ogs_pfcp_connect() [172.22.0.8]:8805 (../lib/pfcp/path.c:61)
+smf      | 01/08 12:26:59.125: [sbi] INFO: NF Service [nsmf-pdusession] (../lib/sbi/context.c:1438)
+smf      | 01/08 12:26:59.126: [sbi] INFO: nghttp2_server() [http://172.22.0.7]:7777 (../lib/sbi/nghttp2-server.c:395)
+smf      | 01/08 12:26:59.126: [app] INFO: SMF initialize...done (../src/smf/app.c:31)
+nrf      | 01/08 12:26:59.127: [nrf] INFO: [37ef283c-ae21-41ee-ab52-47bd3fc0c85d] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+scp      | 01/08 12:26:59.128: [sbi] INFO: [37ef283c-ae21-41ee-ab52-47bd3fc0c85d] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+scp      | 01/08 12:26:59.128: [sbi] INFO: [37ef283c-ae21-41ee-ab52-47bd3fc0c85d] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+smf      | 01/08 12:26:59.129: [sbi] INFO: [37ef283c-ae21-41ee-ab52-47bd3fc0c85d] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+amf      | 01/08 12:26:59.130: [sbi] INFO: [37ef283c-ae21-41ee-ab52-47bd3fc0c85d] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+amf      | 01/08 12:26:59.130: [sbi] INFO: [37ef283c-ae21-41ee-ab52-47bd3fc0c85d] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+nrf      | 01/08 12:26:59.131: [nrf] INFO: [37f96914-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131044+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:59.131: [nrf] INFO: [37f97382-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131283+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:59.131: [nrf] INFO: [37f97fda-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131600+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:26:59.131: [nrf] INFO: [37f98732-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131786+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+smf      | 01/08 12:26:59.132: [sbi] INFO: [37f96914-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131044+00:00 [duration:86400,validity:86399.998743,patch:43199.999371] (../lib/sbi/nnrf-handler.c:509)
+smf      | 01/08 12:26:59.132: [sbi] INFO: [37f97382-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131283+00:00 [duration:86400,validity:86399.998509,patch:43199.999254] (../lib/sbi/nnrf-handler.c:509)
+smf      | 01/08 12:26:59.133: [sbi] INFO: [37f97fda-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131600+00:00 [duration:86400,validity:86399.998468,patch:43199.999234] (../lib/sbi/nnrf-handler.c:509)
+smf      | 01/08 12:26:59.133: [sbi] INFO: [37f98732-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:26:59.131786+00:00 [duration:86400,validity:86399.998318,patch:43199.999159] (../lib/sbi/nnrf-handler.c:509)
+upf      | Open5GS daemon v2.6.6
+upf      |
+upf      | 01/08 12:26:59.235: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:126)
+upf      | 01/08 12:26:59.235: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:129)
+upf      | 01/08 12:26:59.271: [metrics] INFO: metrics_server() [http://172.22.0.8]:9091 (../lib/metrics/prometheus/context.c:299)
+upf      | 01/08 12:26:59.271: [pfcp] INFO: pfcp_server() [172.22.0.8]:8805 (../lib/pfcp/path.c:30)
+upf      | 01/08 12:26:59.271: [pfcp] INFO: ogs_pfcp_connect() [172.22.0.7]:8805 (../lib/pfcp/path.c:61)
+upf      | 01/08 12:26:59.272: [gtp] INFO: gtp_server() [172.22.0.8]:2152 (../lib/gtp/path.c:30)
+upf      | 01/08 12:26:59.272: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+smf      | 01/08 12:26:59.273: [smf] INFO: PFCP associated [172.22.0.8]:8805 (../src/smf/pfcp-sm.c:196)
+upf      | 01/08 12:26:59.274: [upf] INFO: PFCP associated [172.22.0.7]:8805 (../src/upf/pfcp-sm.c:184)
+upf      | 01/08 12:27:01.629: [upf] WARNING: PFCP[REQ] has already been associated [172.22.0.7]:8805 (../src/upf/pfcp-sm.c:270)
+smf      | 01/08 12:27:01.629: [smf] WARNING: PFCP[RSP] has already been associated [172.22.0.8]:8805 (../src/smf/pfcp-sm.c:299)
+bsf      | Open5GS daemon v2.6.6
+bsf      |
+bsf      | 01/08 12:27:07.650: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/bsf.yaml' (../lib/app/ogs-init.c:126)
+bsf      | 01/08 12:27:07.650: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/bsf.log' (../lib/app/ogs-init.c:129)
+bsf      | 01/08 12:27:07.654: [sbi] INFO: NF Service [nbsf-management] (../lib/sbi/context.c:1438)
+bsf      | 01/08 12:27:07.654: [sbi] INFO: nghttp2_server() [http://172.22.0.29]:7777 (../lib/sbi/nghttp2-server.c:395)
+bsf      | 01/08 12:27:07.655: [app] INFO: BSF initialize...done (../src/bsf/app.c:31)
+nrf      | 01/08 12:27:07.657: [nrf] INFO: [3d0df32a-ae21-41ee-8fdc-f523459444fc] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+scp      | 01/08 12:27:07.657: [sbi] INFO: [3d0df32a-ae21-41ee-8fdc-f523459444fc] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+scp      | 01/08 12:27:07.657: [sbi] INFO: [3d0df32a-ae21-41ee-8fdc-f523459444fc] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+bsf      | 01/08 12:27:07.658: [sbi] INFO: [3d0df32a-ae21-41ee-8fdc-f523459444fc] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+udr      | Open5GS daemon v2.6.6
+udr      |
+udr      | 01/08 12:27:07.787: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:126)
+udr      | 01/08 12:27:07.787: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:129)
+mongo    | {"t":{"$date":"2024-01-08T12:27:07.792+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.14:36570","uuid":"160ee1a4-a13c-4681-a7d6-1a91e28c70cd","connectionId":1,"connectionCount":1}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:07.792+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"172.22.0.14:36570","client":"conn1","doc":{"driver":{"name":"mongoc","version":"1.16.1"},"os":{"type":"Linux","name":"Ubuntu","version":"20.04","architecture":"x86_64"},"platform":"cfg=0x00a15e80e9 posix=200809 stdc=201710 CC=GCC 9.2.1 20200228"}}}
+udr      | 01/08 12:27:07.793: [dbi] INFO: MongoDB URI: 'mongodb://172.22.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+udr      | 01/08 12:27:07.793: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context.c:1438)
+udr      | 01/08 12:27:07.793: [sbi] INFO: nghttp2_server() [http://172.22.0.14]:7777 (../lib/sbi/nghttp2-server.c:395)
+udr      | 01/08 12:27:07.794: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+nrf      | 01/08 12:27:07.796: [nrf] INFO: [3d22cc5a-ae21-41ee-98b7-85f4a3f3d9c4] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+scp      | 01/08 12:27:07.797: [sbi] INFO: [3d22cc5a-ae21-41ee-98b7-85f4a3f3d9c4] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+scp      | 01/08 12:27:07.797: [sbi] INFO: [3d22cc5a-ae21-41ee-98b7-85f4a3f3d9c4] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+udr      | 01/08 12:27:07.799: [sbi] INFO: [3d22cc5a-ae21-41ee-98b7-85f4a3f3d9c4] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+udm      | 01/08 12:27:07.799: [sbi] INFO: [3d22cc5a-ae21-41ee-98b7-85f4a3f3d9c4] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+udm      | 01/08 12:27:07.800: [sbi] INFO: [3d22cc5a-ae21-41ee-98b7-85f4a3f3d9c4] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+pcf      | Open5GS daemon v2.6.6
+pcf      |
+pcf      | 01/08 12:27:07.957: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcf.yaml' (../lib/app/ogs-init.c:126)
+pcf      | 01/08 12:27:07.957: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcf.log' (../lib/app/ogs-init.c:129)
+pcf      | 01/08 12:27:07.966: [metrics] INFO: metrics_server() [http://172.22.0.27]:9091 (../lib/metrics/prometheus/context.c:299)
+mongo    | {"t":{"$date":"2024-01-08T12:27:07.967+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.27:53348","uuid":"6b6a6375-0036-43f1-bc5b-c8c433e6230f","connectionId":2,"connectionCount":2}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:07.967+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"172.22.0.27:53348","client":"conn2","doc":{"driver":{"name":"mongoc","version":"1.16.1"},"os":{"type":"Linux","name":"Ubuntu","version":"20.04","architecture":"x86_64"},"platform":"cfg=0x00a15e80e9 posix=200809 stdc=201710 CC=GCC 9.2.1 20200228"}}}
+pcf      | 01/08 12:27:07.968: [dbi] INFO: MongoDB URI: 'mongodb://172.22.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+pcf      | 01/08 12:27:07.968: [sbi] INFO: NF Service [npcf-am-policy-control] (../lib/sbi/context.c:1438)
+pcf      | 01/08 12:27:07.968: [sbi] INFO: NF Service [npcf-smpolicycontrol] (../lib/sbi/context.c:1438)
+pcf      | 01/08 12:27:07.968: [sbi] INFO: NF Service [npcf-policyauthorization] (../lib/sbi/context.c:1438)
+pcf      | 01/08 12:27:07.969: [sbi] INFO: nghttp2_server() [http://172.22.0.27]:7777 (../lib/sbi/nghttp2-server.c:395)
+pcf      | 01/08 12:27:07.969: [app] INFO: PCF initialize...done (../src/pcf/app.c:31)
+nrf      | 01/08 12:27:07.971: [nrf] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+scp      | 01/08 12:27:07.972: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+scp      | 01/08 12:27:07.972: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+amf      | 01/08 12:27:07.973: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+amf      | 01/08 12:27:07.973: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+pcf      | 01/08 12:27:07.974: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+smf      | 01/08 12:27:07.974: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:725)
+smf      | 01/08 12:27:07.974: [sbi] INFO: [3d3d89c8-ae21-41ee-b3e5-71bdf08688ba] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:735)
+nrf      | 01/08 12:27:07.975: [nrf] INFO: [3d3eef5c-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:27:07.975305+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+nrf      | 01/08 12:27:07.975: [nrf] INFO: [3d3efda8-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:27:07.975633+00:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+pcf      | 01/08 12:27:07.976: [sbi] INFO: [3d3eef5c-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:27:07.975305+00:00 [duration:86400,validity:86399.998938,patch:43199.999469] (../lib/sbi/nnrf-handler.c:509)
+pcf      | 01/08 12:27:07.976: [sbi] INFO: [3d3efda8-ae21-41ee-91b9-7fb24726f28c] Subscription created until 2024-01-09T12:27:07.975633+00:00 [duration:86400,validity:86399.999021,patch:43199.999510] (../lib/sbi/nnrf-handler.c:509)
+webui    |
+webui    | > open5gs@2.6.6 dev
+webui    | > node server/index.js
+webui    |
+webui    | > Using external babel configuration
+webui    | > Location: "/open5gs/webui/.babelrc"
+webui    |  DONE  Compiled successfully in 1604ms12:27:11 PM
+webui    |
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.559+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:45378","uuid":"2247dc24-c62d-4316-9cb1-7d488d3c3589","connectionId":3,"connectionCount":3}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.578+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"172.22.0.26:45378","client":"conn3","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.7.4"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.4.0-126-generic"},"platform":"'Node.js v20.10.0, LE (unified)","version":"3.7.4|5.13.20"}}}
+webui    | Mongoose: subscribers.ensureIndex({ imsi: 1 }, { unique: true, background: true })
+webui    | Mongoose: accounts.ensureIndex({ username: 1 }, { unique: true, background: true })
+webui    | (node:23) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+webui    | (Use `node --trace-deprecation ...` to show where the warning was created)
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.611+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:45380","uuid":"976f56a7-11e7-41ed-b931-2959369e840d","connectionId":4,"connectionCount":4}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.612+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:45394","uuid":"9ec254d6-ad70-4119-b14f-2a745609bc0e","connectionId":5,"connectionCount":5}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.654+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:45404","uuid":"2fd08659-e0d0-4d8c-bdde-ec964e815034","connectionId":6,"connectionCount":6}}
+webui    | Mongoose: accounts.count({}, {})
+webui    | (node:23) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use Collection.countDocuments or Collection.estimatedDocumentCount instead
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.657+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:45416","uuid":"2093f91e-bd1f-4bac-80b3-7eab8fe0a026","connectionId":7,"connectionCount":7}}
+webui    | > Ready on http://83cb16198a75:3000
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.660+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"172.22.0.26:45380","client":"conn4","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.7.4"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.4.0-126-generic"},"platform":"'Node.js v20.10.0, LE (unified)","version":"3.7.4|5.13.20"}}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.661+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"172.22.0.26:45394","client":"conn5","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.7.4"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.4.0-126-generic"},"platform":"'Node.js v20.10.0, LE (unified)","version":"3.7.4|5.13.20"}}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.663+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"172.22.0.26:45404","client":"conn6","doc":{"driver":{"name":"nodejs","version":"5.9.0"},"platform":"Node.js v20.10.0, LE","os":{"name":"linux","architecture":"x64","version":"5.4.0-126-generic","type":"Linux"}}}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.664+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"172.22.0.26:45416","client":"conn7","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.7.4"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.4.0-126-generic"},"platform":"'Node.js v20.10.0, LE (unified)","version":"3.7.4|5.13.20"}}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.676+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:45430","uuid":"e918a819-cd33-4d49-86b7-300c07e005a6","connectionId":8,"connectionCount":8}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:11.680+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"172.22.0.26:45430","client":"conn8","doc":{"driver":{"name":"nodejs","version":"5.9.0"},"platform":"Node.js v20.10.0, LE","os":{"name":"linux","architecture":"x64","version":"5.4.0-126-generic","type":"Linux"}}}}
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | > Building page: /
+webui    |  DONE  Compiled successfully in 5895ms12:27:18 PM
+webui    |
+mongo    | {"t":{"$date":"2024-01-08T12:27:18.812+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:60870","uuid":"a27404d0-9deb-487a-9e3b-27f492e48e91","connectionId":9,"connectionCount":9}}
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+mongo    | {"t":{"$date":"2024-01-08T12:27:18.820+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"172.22.0.26:60870","client":"conn9","doc":{"driver":{"name":"nodejs","version":"5.9.0"},"platform":"Node.js v20.10.0, LE","os":{"name":"linux","architecture":"x64","version":"5.4.0-126-generic","type":"Linux"}}}}
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+mongo    | {"t":{"$date":"2024-01-08T12:27:18.859+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:60880","uuid":"55e28935-2ea1-490f-925b-f82fcfee1e6c","connectionId":10,"connectionCount":10}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:18.861+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"172.22.0.26:60880","client":"conn10","doc":{"driver":{"name":"nodejs","version":"5.9.0"},"platform":"Node.js v20.10.0, LE","os":{"name":"linux","architecture":"x64","version":"5.4.0-126-generic","type":"Linux"}}}}
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    |  WAIT  Compiling...12:27:19 PM
+webui    |
+webui    |  DONE  Compiled successfully in 276ms12:27:19 PM
+webui    |
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+mongo    | {"t":{"$date":"2024-01-08T12:27:22.160+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:60886","uuid":"da077401-dcc6-4a20-9521-acd88e20fc41","connectionId":11,"connectionCount":11}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:22.162+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"172.22.0.26:60886","client":"conn11","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.7.4"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.4.0-126-generic"},"platform":"'Node.js v20.10.0, LE (unified)","version":"3.7.4|5.13.20"}}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:22.174+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.22.0.26:60888","uuid":"bc820df2-702a-4b88-b6a7-7609d1525bad","connectionId":12,"connectionCount":12}}
+mongo    | {"t":{"$date":"2024-01-08T12:27:22.175+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"172.22.0.26:60888","client":"conn12","doc":{"driver":{"name":"nodejs","version":"5.9.0"},"platform":"Node.js v20.10.0, LE","os":{"name":"linux","architecture":"x64","version":"5.4.0-126-generic","type":"Linux"}}}}
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: subscribers.find({}, { projection: {} })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: profiles.find({}, { projection: {} })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: subscribers.insertOne({ ambr: { downlink: { value: 10000, unit: 3 }, uplink: { value: 10000, unit: 3 } }, schema_version: 1, msisdn: [], imeisv: [], mme_host: [], mme_realm: [], purge_flag: [], access_restriction_data: 32, subscriber_status: 0, network_access_mode: 0, subscribed_rau_tau_timer: 12, _id: ObjectId("659beb63f9bc640017942e18"), imsi: '404070000005203', security: { k: '12345600000000000000000000000000', amf: '8000', op: null, opc: '6dc4386268c20868879267363375bc47' }, slice: [ { _id: ObjectId("659beb63f9bc640017942e19"), sst: 1, default_indicator: true, session: [ { qos: { arp: { priority_level: 8, pre_emption_capability: 1, pre_emption_vulnerability: 1 }, index: 9 }, ambr: { downlink: { value: 1, unit: 3 }, uplink: { value: 1, unit: 3 } }, _id: ObjectId("659beb63f9bc640017942e1a"), name: 'internet', type: 3, pcc_rule: [] } ] } ], __v: 0}, { session: null })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+webui    | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
